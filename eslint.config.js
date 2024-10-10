@@ -8,9 +8,9 @@ export default [
   {
     settings: {
       react: {
-        version: 'detect',
-      },
-    },
+        version: 'detect'
+      }
+    }
   },
   { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
   { languageOptions: { globals: globals.browser } },
@@ -20,7 +20,9 @@ export default [
   eslintPluginPrettierRecommended,
   {
     rules: {
+      '@typescript-eslint/no-empty-object-type': 'warn',
       'react/react-in-jsx-scope': 'off',
-    },
-  },
+      'react/prop-types': 'warn'
+    }
+  }
 ];
